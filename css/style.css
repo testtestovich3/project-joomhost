@@ -1,25 +1,46 @@
-body {
-    /*background-color: green;*/
+html {
+	box-sizing: border-box;
 }
-.logo{
 
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
 }
-.logo__img{
-	width: 62px;
-	height: 62px;
-}
-.logo__title{
 
+a{
+	color: #000;
+	text-decoration: none;
 }
-.logo__destiption{
-	width: 205px;
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
-.btn {
-    width: 190px;
-    height: 50px;
-    box-shadow: 0 4px 0 #efb631, 1px 1px 0 rgba(255, 255, 255, 0.5);
-    border-radius: 25px;
-    border: 1px solid #fff000;
-    background-color: #ffffff;
-    background-image: linear-gradient(to top, #ffd741 0%, #ffe650 100%);
+
+.header{
+	border-top: 1px solid #2c7de8;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 87px;
+}
+
+.menu__list{
+	display: flex;
+}
+
+.menu__list li{
+	margin-left: 38px;
+}
+
+.menu__list a{
+	/*Open Sans bold*/
+	color: #2f3f54;
+	font-size: 14px;
+	font-weight: 700;
 }
